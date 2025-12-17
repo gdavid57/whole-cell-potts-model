@@ -52,10 +52,10 @@ Studies the statistics of a single cell’s constrained motion under a **Maxwell
 
 <p align="center">
   <a href="benchmarks/02_mechanical_confinement/">
-    <img src="docs/trajectories_3d_no_elasticity.png?v=2" alt="Trajectories 3D (no elasticity)" width="400"/>
+    <img src="https://raw.githubusercontent.com/gdavid57/whole-cell-potts-model/main/docs/trajectories_3d_no_elasticity.png" alt="Trajectories 3D (no elasticity)" width="400"/>
   </a>
   <a href="benchmarks/02_mechanical_confinement/">
-    <img src="docs/trajectories_3d_with_elasticity.png?v=2" alt="Trajectoires 3D (confinement)" width="400"/>
+    <img src="https://raw.githubusercontent.com/gdavid57/whole-cell-potts-model/main/docs/trajectories_3d_with_elasticity.png" alt="Trajectoires 3D (confinement)" width="400"/>
   </a>
 </p>
 
