@@ -52,10 +52,10 @@ Studies the statistics of a single cell’s constrained motion under a **Maxwell
 
 <p align="center">
   <a href="benchmarks/02_mechanical_confinement/">
-    <img src="docs/trajectories_3d_no_elasticity.png" alt="Trajectories 3D (no elasticity)" width="360"/>
+    <img src="docs/trajectories_3d_no_elasticity.png" alt="Trajectories 3D (no elasticity)" width="400"/>
   </a>
   <a href="benchmarks/02_mechanical_confinement/">
-    <img src="docs/trajectories_3d_with_elasticity.png" alt="Trajectoires 3D (confinement)" width="720"/>
+    <img src="docs/trajectories_3d_with_elasticity.png" alt="Trajectoires 3D (confinement)" width="400"/>
   </a>
 </p>
 
@@ -93,7 +93,7 @@ docker run --rm -it \
   -v "$(pwd)":/work \
   -w /work/benchmarks/02_mechanical_confinement \
   gdavid57/cc3d-compile \
-  conda run -n cc3d_compile python test_bacteria_translation_sweep.py --sweep
+  conda run -n cc3d_compile python cell_brownian_motion_maxwell_constraint.py --sweep
 
 # 3) Benchmark 03 — Bacteria whole-cell
 docker run --rm -it \
@@ -101,6 +101,13 @@ docker run --rm -it \
   -w /work/benchmarks/03_bacteria_whole_cell \
   gdavid57/cc3d-compile \
   conda run -n cc3d_compile python automated_wc_cc3d_script.py default_config.json
+
+# 4) Generate all figures (after running benchmarks)
+docker run --rm -it \
+  -v "$(pwd)":/work \
+  -w /work \
+  gdavid57/cc3d-compile \
+  conda run -n cc3d_compile python scripts/generate_all_figures.py
 ```
 
 ---
