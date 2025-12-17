@@ -1,0 +1,5 @@
+--------LB with amplification factor of 1 (Single Thread Version)-------------
+sum of copy numbers:6226
+There are 933 unique mRNA sequences with 6226 total copies
+Total model size in codons: 1379733
+Single thread processing - no distribution needed

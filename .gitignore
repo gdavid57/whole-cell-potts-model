@@ -1,0 +1,17 @@
+# --- Benchmark outputs (often huge) ---
+benchmarks/**/results/**/data/
+benchmarks/**/results/**/snapshots/
+
+# --- Common local artifacts ---
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+
+# --- OS / editor ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+

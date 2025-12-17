@@ -1,0 +1,29 @@
+{
+  "simulation": {
+    "potts_dimensions": { "x": 128, "y": 128, "z": 128 },
+    "potts_steps": 100000,
+    "potts_temperature": 10.0,
+    "neighbor_order": 1
+  },
+  "lattice_initialization_steppable": {
+    "n_cells": 1,
+    "radius": 3,
+    "margin": 15
+  },
+  "growth_steppable": {
+    "lambda_volume": 100.0,
+    "target_volume_min": 500.0,
+    "target_volume_max": 1000.0,
+    "cc3d_steps": 10,
+    "outputdir": "./snapshots/",
+    "snapshot_steps": 100,
+    "trna_data_path": "../../whole_cell_model/data/",
+    "mrna_data_path": "../../whole_cell_model/data/LB/",
+    "init_cell_volume": 3.5e-18,
+    "num_ribosomes": 50000,
+    "time_reference": 1200,
+    "whole_cell_steps": 50000,
+    "step_to_stationary_stage": 500000,
+    "generation_csv_path": "./snapshots/generation_times.csv"
+  }
+}

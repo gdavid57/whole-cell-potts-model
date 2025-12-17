@@ -1,0 +1,35 @@
+{
+  "simulation": {
+    "potts_dimensions": [
+      { "x": 64, "y": 64, "z": 64 },
+      { "x": 96, "y": 96, "z": 96 },
+      { "x": 128, "y": 128, "z": 128 }
+    ],
+    "potts_steps": 100000,
+    "potts_temperature": 10.0,
+    "neighbor_order": 1,
+    "bacteria_rotation_criterion": 10000000,
+    "bacteria_random_amplitude": 0.0,
+    "bacteria_lambda_shape": 100.0
+  },
+  "lattice_initialization_steppable": {
+    "n_cells": [1, 2, 3, 4],
+    "radius": 3,
+    "margin": 15
+  },
+  "growth_steppable": {
+    "initial_major_length": 15.0,
+    "minor_length": 10.0,
+    "lambda_volume": 100.0,
+    "cc3d_steps": [10, 20, 50, 100],
+    "outputdir": "./snapshots/",
+    "snapshot_steps": 100,
+    "trna_data_path": "../../whole_cell_model/data/",
+    "mrna_data_path": "../../whole_cell_model/data/LB/",
+    "init_cell_volume": 3.5e-18,
+    "num_ribosomes": 50000,
+    "time_reference": 1200,
+    "whole_cell_steps": [1000, 2000, 5000, 10000],
+    "step_to_stationary_stage": [100000, 200000, 500000]
+  }
+}

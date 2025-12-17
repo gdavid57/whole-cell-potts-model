@@ -1,0 +1,45 @@
+channels:
+  - conda-forge
+  - compucell3d
+dependencies:
+  # compile dependencies
+  - cmake=3.21
+  - swig=4.2.1
+  - numpy=1.24
+  - gcc_linux-64=14
+  - gxx_linux-64=14
+  - python 3.10
+  - vtk=9.2
+  - eigen
+  - tbb-devel=2021
+  - boost=1.85
+  # libxcrypt dependency was discovered during actual compilation - searched pkgs sub-folders for all occurrences of crypt.h
+  - libxcrypt
+  - psutil
+  - deprecated
+  - cc3d-network-solvers>=0.3.0
+  # cc3d run dependencies
+  - scipy
+  - pandas
+  - scikit-image
+  - jinja2
+  - deprecated
+  - psutil
+  - simservice
+  - notebook
+  - ipywidgets
+  - ipyvtklink
+  - sphinx
+  - graphviz
+  # player dependencies
+  - webcolors
+  - requests
+  - pyqt=5
+  - pyqtgraph
+  # twedit dependencies
+  - chardet
+  - pyqtwebkit
+  - qscintilla2
+  - pywin32 # [win]
+  # debugging
+  - gdb

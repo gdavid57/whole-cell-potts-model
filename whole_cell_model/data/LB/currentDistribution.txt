@@ -1,0 +1,4 @@
+Single thread version - no distribution needed
+Total model size: 1379733 codons
+Number of mRNA copies: 6226
+Number of unique sequences: 933
