@@ -136,7 +136,7 @@ For image build details (from source), contexts and options, see:
 
 ## License
 
-See **[`LICENSE`](LICENSE)**.
+Proprietary — **All rights reserved**. See **[`LICENSE`](LICENSE)**.
 
 ---
 
